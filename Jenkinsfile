@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 // Application-specific Values
-def mavenArgs="--settings=\$(pwd)/maven/settings.xml -Dcom.redhat.xpaas.repo.redhatga"     // Global maven arguments
+def mavenArgs="-Dcom.redhat.xpaas.repo.redhatga"     // Global maven arguments
 def mavenPackageArgs="package -Popenshift"           // Maven package arguments
 def mavenOutputJar="ROOT.war"                        // Output jar from Maven
 def appName="mlbparks"                               // Application name (for route, buildconfig, deploymentconfig)
